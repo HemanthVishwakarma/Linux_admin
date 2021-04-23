@@ -1,9 +1,10 @@
-
 Setup and Configure local YUM repos on CentOS
 Step 1: Configure Network Access 
 	yum typically delivers files over http or ftp,for hosting yum repos we need httpd server
 
 	# yum install httpd 
+	# systemctl enable httpd
+	# systemctl start httpd
 
 Step 2: Create Yum Local Repository
 
